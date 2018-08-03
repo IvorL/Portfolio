@@ -8,28 +8,25 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <div class="container">
+    <div class="container-fluid">
       <div class="row ownStyle">
-        <div class="col-xs-2">
-          <!-- Navbar -->
-          <button type="button" class="btn btn-default navbar-btn">About Me</button>
-        </div>
-        <div class="col-xs-2 col-xs-push-1">
-          <!-- Navbar -->
-          <button type="button" class="btn btn-default navbar-btn">Experience</button>
-        </div>
-        <div class="col-xs-2 col-xs-push-2">
-          <!-- Navbar -->
-          <button type="button" class="btn btn-default navbar-btn">Projects</button>
-        </div>
-        <div class="col-xs-2 col-xs-push-2">
-          <!-- Navbar -->
-          <button type="button" class="btn btn-default navbar-btn">Contact Details</button>
+        <nav class="hidden-xs col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2 nav-bar">
+          <ul class="nav nav-tabs nav-justified">
+            <li><a href="#AboutMe">About Me</a></li>
+            <li><a href="Experience">Experience</a></li>
+            <li><a href="#Projects">Projects</a></li>
+            <li><a href="Contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="row">
+        <div class="visible-xs col-xs-6 col-offset-3">
+          Drop-down bar
         </div>
       </div>
       <div class="row">
-        <div class="col-xs-12 ownStyle">
-          <img class="profilePic"src="images/water.jpeg" alt="Image Not Found">
+        <div id="AboutMe" class="col-xs-12 ownStyle">
+          <img class="profilePic" src="images/water.jpeg" alt="Image Not Found">
           <h4>About Me</h4>
           <p>Example text:
             What is Lorem Ipsum?
@@ -38,13 +35,10 @@
             Why do we use it?
             It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
           </p>
-
         </div>
-        <!-- <div class="col-xs-4 ownStyle picContainer">
-        </div> -->
       </div>
       <div class="row">
-        <div class="col-xs-6 ownStyle">
+        <div id="Experience" class="col-xs-6 ownStyle">
           Experience
         </div>
         <div class="col-xs-6 ownStyle">
@@ -57,7 +51,7 @@
         </div>
       </div>
       <div class="row ownStyle">
-        <div class="col-xs-12">
+        <div id="Contact" class="col-xs-12">
           Contact Details
         </div>
       </div>
