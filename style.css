@@ -1,21 +1,22 @@
-.ownStyle {
-  border: 1px black solid;
+.mobileNav {
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0 10px 10px;
 }
 
 .profilePic {
   float: right;
   height: 50%;
   width: 50%;
-  margin: 10px 10px;
+  margin: 40px 10px 10px 10px;
 }
 
-#AboutMe {
-  padding-right: 0px;
+.ownStyle {
+  border-top: 1px solid #ddd;
+  padding-top: 10px;
 }
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 600px) {
   .profilePic {
-    width: 20%;
+    width: 30%;
   }
-
 }
