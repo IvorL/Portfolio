@@ -1,5 +1,9 @@
+.normalNav {
+  background-color: #524848;
+}
+
+
 .mobileNav {
-  border-bottom: 1px solid #ddd;
   padding: 10px 0 10px 10px;
   background-color: #524848;
 }
@@ -12,6 +16,12 @@
   border: 2px solid red;
 }
 
+.nav-buttons li a{
+  border-bottom: 0px !important;
+  color: white;
+}
+
+/* Padding for each section inside the main container */
 .ownStyle {
   padding: 10px 10px;
 }
